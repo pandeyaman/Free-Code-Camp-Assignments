@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>JS Survey Form</title>
+</head>
+
+<body>
+    <header id="header">
+        <h1 id="title">JavaScript Survey Form</h1>
+        <h4 id="description"> JavaScript: A language so flexible it even runs on Internet Explorer</h4>
+    </header>
+    <form action="post" id="survey-form">
+        <div class="form-div">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-div">
+            <label for="email">Email</label><br>
+            <input type="email" id="email" placeholder="Enter your Email ID">
+        </div>
+        <div class="form-div">
+            <label for="name">Age <span>(Optional)</span></label><br>
+            <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-div">
+            <label for="role">Which option best describes your current role?</label><br>
+            <select name="current role" id="role">
+                <option value="role" selected disabled>Select your current role</option>
+                <option value="student" >Student</option>
+                <option value="job" >Full Time Job</option>
+                <option value="freelancer" >Freelancer</option>
+                <option value="notdisclosed" >Prefer not to say</option>
+                <option value="others">Others</option>
+            </select>
+        </div>
+        <div class="form-div">
+            <label for="radio">Would you recommend JavaScript to a friend?</label><br>
+            <input name="recommend" type="radio" id="radio"  checked>  Definately <br>
+            <input name="recommend" type="radio" id="radio" >  Maybe <br>
+            <input name="recommend" type="radio" id="radio" >  Not Sure <br>
+            <input name="recommend" type="radio" id="radio" >  Never <br>
+        </div>
+        <div class="form-div">
+            <label for="framework">What is your favorite JS Library/Framework?</label><br>
+            <select name="current role" id="framework">
+                <option value="role" selected disabled>Select your option</option>
+                <option value="react" >React.js</option>
+                <option value="node" >Node.js</option>
+                <option value="angular" >Angular.js</option>
+                <option value="jquery" >jQuery</option>
+                <option value="vuew">Vue.js</option>
+                <option value="three">Three.js</option>
+                <option value="electron">Electron.js</option>
+            </select>
+        </div>
+        <div class="form-div">
+            <label for="usage">What do you use JavaScript for?</label><br>
+            <input type="checkbox" id="usgae"> Front-End Development <br>
+            <input type="checkbox" id="usgae"> Back-End Development <br>
+            <input type="checkbox" id="usgae"> Open Source Contribution <br>
+            <input type="checkbox" id="usgae"> Full Stack Development <br>
+            <input type="checkbox" id="usgae"> Mobile Applications <br>
+            <input type="checkbox" id="usgae"> Animation & Games <br>
+        </div>
+        <div class="form-div">
+            <label for="comments">Any additional comments?</label><br>
+            <textarea name="comments" id="comments" cols="100%" rows="10"></textarea>
+        </div>
+        <div class="form-div">
+            <button type="submit" id="submit">SUBMIT</button>
+        </div>
+        
+    </form>
+</body>
+
+</html>
