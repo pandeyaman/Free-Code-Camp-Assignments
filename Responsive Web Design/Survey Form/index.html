@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>JS Survey Form</title>
 </head>
 
@@ -25,38 +26,42 @@
         </div>
         <div class="form-div">
             <label for="email" id="email-label" class="label-text">Email</label><br>
-            <input type="email" id="email" placeholder="Enter your Email ID" required> 
+            <input type="email" id="email" placeholder="Enter your Email ID" class="input-field" required>
         </div>
         <div class="form-div">
             <label for="number" id="number-label" class="label-text">Age <span>(Optional)</span></label><br>
-            <input type="number" id="number" min="12" max="100" placeholder="Age">
+            <input type="number" id="number" min="12" max="100" placeholder="Age" class="input-field">
         </div>
         <div class="form-div">
             <label for="dropdown" class="label-text">Which option best describes your current role?</label><br>
-            <select name="current role" id="dropdown" required>
+            <select name="current role" id="dropdown" class="input-field" required>
                 <option value="role" selected disabled>Select your current role</option>
-                <option value="student" >Student</option>
-                <option value="job" >Full Time Job</option>
-                <option value="freelancer" >Freelancer</option>
-                <option value="notdisclosed" >Prefer not to say</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="freelancer">Freelancer</option>
+                <option value="notdisclosed">Prefer not to say</option>
                 <option value="others">Others</option>
             </select>
         </div>
         <div class="form-div">
             <label for="radio" class="label-text">Would you recommend JavaScript to a friend?</label><br>
-            <input name="recommend" type="radio" id="radio" value="definately"  checked>  Definately <br>
-            <input name="recommend" type="radio" id="radio" value="maybe" >  Maybe <br>
-            <input name="recommend" type="radio" id="radio" value="notsure" >  Not Sure <br>
-            <input name="recommend" type="radio" id="radio" value="never" >  Never <br>
+            <input name="recommend" type="radio" id="radio" class="input-radio" value="definately" checked> <span
+                class="radio-label">Definately</span><br>
+            <input name="recommend" type="radio" id="radio" class="input-radio" value="maybe"> <span
+                class="radio-label">Maybe</span><br>
+            <input name="recommend" type="radio" id="radio" class="input-radio" value="notsure"> <span
+                class="radio-label">Not Sure</span><br>
+            <input name="recommend" type="radio" id="radio" class="input-radio" value="never"> <span
+                class="radio-label">Never</span><br>
         </div>
         <div class="form-div">
             <label for="framework" class="label-text">What is your favorite JS Library/Framework?</label><br>
-            <select name="current role" id="framework">
+            <select name="current role" id="framework" class="input-field">
                 <option value="role" selected disabled>Select your option</option>
-                <option value="react" >React.js</option>
-                <option value="node" >Node.js</option>
-                <option value="angular" >Angular.js</option>
-                <option value="jquery" >jQuery</option>
+                <option value="react">React.js</option>
+                <option value="node">Node.js</option>
+                <option value="angular">Angular.js</option>
+                <option value="jquery">jQuery</option>
                 <option value="vuew">Vue.js</option>
                 <option value="three">Three.js</option>
                 <option value="electron">Electron.js</option>
@@ -64,21 +69,35 @@
         </div>
         <div class="form-div">
             <label for="usage" class="label-text">What do you use JavaScript for?</label><br>
-            <input type="checkbox" id="usage" value="frontend"> Front-End Development <br>
-            <input type="checkbox" id="usage" value="backend"> Back-End Development <br>
-            <input type="checkbox" id="usage" value="opensource"> Open Source Contribution <br>
-            <input type="checkbox" id="usage" value="fullstack"> Full Stack Development <br>
-            <input type="checkbox" id="usage" value="mobile"> Mobile Applications <br>
-            <input type="checkbox" id="usage" value="animation"> Animation & Games <br>
+            <input type="checkbox" id="usage" class="input-radio" value="frontend"> <span class="radio-label">Front-End
+                Development</span> <br>
+            <input type="checkbox" id="usage" class="input-radio" value="backend"> <span class="radio-label">Back-End
+                Development</span> <br>
+            <input type="checkbox" id="usage" class="input-radio" value="opensource"> <span class="radio-label">Open
+                Source Contribution</span> <br>
+            <input type="checkbox" id="usage" class="input-radio" value="fullstack"> <span class="radio-label">Full
+                Stack Development</span> <br>
+            <input type="checkbox" id="usage" class="input-radio" value="mobile"> <span class="radio-label">Mobile
+                Applications </span><br>
+            <input type="checkbox" id="usage" class="input-radio" value="animation"> <span class="radio-label">Animation
+                & Games</span> <br>
         </div>
         <div class="form-div">
             <label for="comments" class="label-text">Any additional comments?</label><br>
             <textarea name="comments" id="comments" cols="100%" rows="10%"></textarea>
         </div>
-        <div class="form-div">
+        <div class="form-div-submit">
             <button type="submit" id="submit">SUBMIT</button>
         </div>
     </form>
-</body>
 
+    <footer>
+        <div id="footer-icons">
+            <a target="_blank"
+                href="https://github.com/pandeyaman/Free-Code-Camp-Assignments/tree/main/Responsive%20Web%20Design/Survey%20Form"
+                class="fa fa-github"></a>
+            <a target="_blank" href="https://twitter.com/pandeyaman111" class="fa fa-twitter"></a>
+        </div>
+    </footer>
+</body>
 </html>
