@@ -1,4 +1,4 @@
-body{
+body {
     background-color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
@@ -7,57 +7,89 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-.section{
+.section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-#header{
+#header {
     width: 100%;
     height: auto;
-    background-color:white;
+    background-color: white;
     display: inline-block;
 
 }
 
-#header-img{
+#header-img {
     float: left;
     margin: 20px 40px;
     width: 25%;
 }
 
-#nav-bar{
+#nav-bar {
     float: right;
     height: 100%;
 }
 
-#nav-bar ul{
+#nav-bar ul {
     margin-top: 7%;
 }
 
-#nav-bar li{
+#nav-bar li {
     display: inline-block;
     padding: 0 3rem;
     text-transform: uppercase;
 }
 
-#nav-bar a{
+#nav-bar a {
     text-decoration: none;
     color: #101010;
 }
 
-#nav-bar a:hover{
+#nav-bar a:hover {
     color: #c0bd00;
 }
 
-.container{
+h3 {
+    margin-bottom: 1%;
+}
+
+.container {
     width: 60%;
-    margin: 0 auto;
-    background-color: blue;
+    margin: 2% auto 0 auto;
     text-align: center;
+}
+
+#email {
+    width: 35%;
+    height: 2rem;
+    margin: 2%;
+}
+
+#submit {
+    font-size: 100%;
+    border-radius: 200px;
+    padding: .5% 5%;
+}
+
+#features {  
+    width: 50%;
+    margin: 4% auto 0 auto;
+    background-color: rgb(31, 192, 192);
 }
 
 
 
+.feature-img{
+    float: left;
+    width: 10%;
+    font-size: 140%;
+}
 
+.feature-text{
+    float: right;
+    width: 90%;
+    font-size: 140%;
+    font-weight: 300;
+}
